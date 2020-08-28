@@ -27,6 +27,7 @@ public class BookController {
     // Create a new Note
     @PostMapping("/books")
     public Book createNote(@Valid @RequestBody Book book) {
+        System.out.println("Webhook check");
         return bookRepository.save(book);
     }
 
