@@ -20,6 +20,7 @@ public class BookController {
 
 
     public List<Book> getAllNotes() {
+        System.out.println("It works");
         return bookRepository.findAll();
     }
 
